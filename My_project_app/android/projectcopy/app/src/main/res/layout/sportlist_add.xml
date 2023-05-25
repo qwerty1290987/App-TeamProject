@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#dedede"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/round"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="50dp"
+            >
+
+
+            <EditText
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="타이머 이름을 정해주세요"
+                android:id="@+id/etTitle"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeCountSettingLV"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@drawable/round"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="30dp"
+            android:weightSum="6"
+            android:gravity="center"
+            >
+
+
+            <EditText
+                android:id="@+id/hourET"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="00"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text=":"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/startBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/minuteET"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="00"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text=":"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/startBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/secondET"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="00"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/round"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="30dp"
+        >
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+
+        android:backgroundTint="@color/black"
+        android:text="저장"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginRight="6dp"
+         />
+
+    <Button
+        android:id="@+id/cancleBtn"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="6dp"
+        android:backgroundTint="@color/black"
+        android:text="취소"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/board_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="목록"/>
+
+    <item
+        android:id="@+id/board_write"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="작성하기"/>
+
+    <item
+        android:id="@+id/board_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="내글보기"/>
+</menu>

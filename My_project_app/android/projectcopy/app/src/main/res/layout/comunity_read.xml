@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#dedede">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+
+
+        <TextView
+            android:id="@+id/tvBoardReadTitle"
+            android:padding="16dp"
+            android:background="@drawable/round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/scdream5"
+            android:layout_weight="1"
+            android:hint="제목을 입력하세요."
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvBoardReadBody"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/scdream5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_weight="1"
+        android:background="@drawable/round"
+        android:hint="내용을 입력하세요."
+        />
+
+
+
+
+
+</LinearLayout>

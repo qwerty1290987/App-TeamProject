@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#dedede">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="제목"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etBoradTitle"
+            android:padding="16dp"
+            android:background="@drawable/round"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/scdream5"
+            android:hint="제목을 입력해주세요"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:text="내용"/>
+
+    <EditText
+        android:id="@+id/etBoradBody"
+        android:padding="16dp"
+        android:fontFamily="@font/scdream5"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="top"
+        android:layout_weight="1"
+        android:background="@drawable/round"
+        android:hint="운동 꿀팁 , 질문 , 정보 등 각종 정보를 공유해보세요."
+        />
+
+    <Button
+        android:id="@+id/resistBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+
+        android:layout_marginBottom="40dp"
+        android:text="등록하기"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
